@@ -1,3 +1,13 @@
 body {
     text-align: center;
 }
+.gameState {
+    left: 30px;
+    position: fixed;
+    text-align: left;
+    top: 30px;
+}
+.gameStateLabel {
+    font-weight: bold;
+    text-transform: uppercase;
+}
