@@ -1,3 +1,24 @@
+// Character Superclass
+// Set character image, initial position and speed
+var Character = function(sprite, x, y){
+    this.sprite = sprite;
+    this.initialX = x;
+    this.initialY = y;
+    this.x = x;
+    this.y = y;
+};
+
+// Draw the character on the screen, required method for game
+Character.prototype.render = function() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+}
+
+// Reset character to its initial position
+Character.prototype.reset = function() {
+    this.x = this.initialX;
+    this.y = this.initialY;
+}
+
 // Enemies our player must avoid
 var Enemy = function() {
     // Variables applied to each of our instances go here,
